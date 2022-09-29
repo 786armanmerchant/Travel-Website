@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200;1,400&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/form.js"></script>
+    <script src="https://kit.fontawesome.com/20deca992b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="logo"/>
+        <h1>Final Project </h1> <p>Arman Merchant - amerchant1749@conestogac.on.ca</p>
+    </header>
+ 
+    <nav>
+        <ul>
+      <li > <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
+        <li>
+            <a class="active"  href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+            <ul class="has-submenu">
+                <li>
+                    <a href="contact.html#table">Table</a>
+                </li>
+                <li>
+                    <a href="contact.html#myvideo">Video</a>
+                </li>
+            </ul>
+        </li>
+     <li> <a href="#"><i class="fa fa-fw fa-sign-in"></i> Login</a></li>
+    </ul>
+     </nav>
+<main>
+     <section class="grid hero-grid">
+        <!-- Unsplash. (2022). [Toronto Canada image by wyyattheierg [Photograph] .  -->
+           <img src="images/banner.jpg" alt="iphone">
+   
+           <div class="hero-text">
+               <h1>Contact US </h1>
+             
+             </div>
+           </div>
+       </section>
+
+     <section class="grid grid2">
+        <div>
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fuga accusamus repudiandae veritatis, id ullam assumenda nemo reiciendis dolorum, repellat hic culpa animi iure explicabo praesentium possimus, quia quae quo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fuga accusamus repudiandae veritatis, id ullam assumenda nemo reiciendis dolorum, repellat hic culpa animi iure explicabo praesentium possimus, quia quae quo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fuga accusamus repudiandae veritatis, id ullam assumenda nemo reiciendis dolorum, repellat hic culpa animi iure explicabo praesentium possimus, quia quae quo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fuga accusamus repudiandae veritatis, id ullam assumenda nemo reiciendis dolorum, repellat hic culpa animi iure explicabo praesentium possimus, quia quae quo.</p>
+        </div>
+        <div class="video_wrapper" >
+            <video autoplay muted controls
+            poster="videos/arman.png" src="videos/video.mp4" id="myvideo">
+            </video>
+            <!-- Video from personal my instagram [https://www.instagram.com/reel/Cct6E7BjzFX/?utm_source=ig_web_copy_link] -->
+           
+        </div>
+    </section>
+
+    <section class="grid grid3">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th colspan="3">Places to visit</th>
+                    <th colspan="2">Price</th>
+                </tr>
+                <tr>
+                    <th>Sr</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Province</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>CN Tower</td>
+                    <td>Toronto</td>
+                    <td>ON</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Wonderland</td>
+                    <td>Toronto</td>
+                    <td>ON</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Niagra Falls</td>
+                    <td>Niagra</td>
+                    <td>ON</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Toronto Island</td>
+                    <td>Toronto</td>
+                    <td>ON</td>
+                    <td>$400</td>
+                </tr>
+            </tbody>
+         
+        </table>
+    </section>
+
+    <section class="grid grid4">
+
+        <div class="container-form">
+            <form action="process-form" method="GET"> 
+                <div class="container">
+                    <div class="input_field">
+                        <label for="firstName"> First Name  <i class="fa-solid fa-user"></i></label>      
+                        <input type="text"  tabindex="1" required pattern="(a-z) {1,15}" id="firstName" name="firstName" placeholder="Enter First Name">       
+                    </div>
+
+                    <div class="input_field">
+                        <label for="email"> Email <i class="fa-solid fa-envelope"></i></label>      
+                        <input type="email"  tabindex="2" required" id="email" name="email" placeholder="Enter Email">
+                    </div>
+    
+                    <div class="input_field">
+                        <label for="dob"> Date of Birth  <i class="fa-solid fa-calendar"></i></label>       
+                        <input type="date"  tabindex="3"  id="dob" name="dob">    
+                    </div>
+                 
+                    <div class="input_field">
+                        <label for="place">Select Place to visit <i class="fa-solid fa-city" ></i></label>
+                   
+                        <select name="place"  id="place" tabindex="4">
+                            <optgroup label="Ontario">
+                                <option value="CN Tower">CN Tower</option>
+                                <option value="Wonderland ">Wonderland</option>
+                                <option value="Toronto Island">Toronto Island</option>
+                            </optgroup>
+                            <optgroup label="Monteral">
+                                <option value="Great city of Monteral">Great city of Monteral</option>
+                                <option value="Museum">Museum</option>
+                                <option value="Old Monteral"> Old Monteral</option>
+                            </optgroup>
+                        </select>      
+                    </div>
+
+                    <div class="input_field">
+                        <label for="reply">Get reply from us <i class="fa-solid fa-phone"></i></label>
+                        <input type="text" tabindex="5" required id="phone" name="phone " placeholder="Please Enter your Number">
+                    </div>
+
+                    <div class="content_wrapper">
+                        <fieldset>
+                            <legend>Which Place you're more intrested in ?</legend>
+                            <div class="radio_btn">
+                                <input type="radio" name="reply_type" tabindex="6" id="reply" value="Toronto">
+                                <label for="call">Toronto</label>
+                            </div>
+                            <div class="radio_btn">
+                                <input type="radio" name="reply_type" tabindex="7" id="reply" value="Niagra">
+                                <label for="sms">Niagra</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <br>
+                    <div class="content_wrapper">
+                        <input type="checkbox" name="terms" id="terms" value="Agreed" tabindex="8">
+                        <label for="terms">I agree to <a href="#">terms and conditions.</a></label>
+                    </div>
+                    <div class="content_wrapper">
+                        <input type="checkbox" name="terms" id="terms" value="Agreed" tabindex="9">
+                        <label for="terms"> I agree to <a href="#">Receive weekly travel insights emails.</a></label>
+                    </div>
+                    <div class="content_wrapper">
+                        <input type="checkbox" name="terms" id="terms" value="Agreed" tabindex="9">
+                        <label for="terms">I agree that  <a href="#">I am 18 years of age.</a></label>
+                    </div>
+                
+                    <div class="submit_btn desktop_only">
+                        <input type="submit" value="Submit">
+                    </div>
+                    <div class="submit_btn mobile_only">
+                        <input type="submit" value="Submit">
+                    </div>
+                    <div class="reset_btn desktop_only">
+                        <input type="reset" value="Reset">
+                    <div class="reset_btn mobile_only">
+                            <input type="submit" value="Sign Up">
+                    </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    </main>
+
+    <footer class="container container6">
+        <div class="footer-col">
+            <h4>Information</h4>
+            <ul>
+                <li><a href="contact.html">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Affiliate program</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Information</h4>
+            <ul>
+                <li><a href="contact.html">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Affiliate program</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Social</h4>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twiiter</a></li>
+                <li><a href="https://www.instagram.com/armanmerchant786/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
+            </ul>
+        </div>
+    
+        
+    </footer>
+    <footer class="footer-end">
+        <div class="footer-end">
+            &copy; Copyright Arman Merchant amerchant1749@conestogacon.ca. 2022
+        </div>
+    </footer>
+
+</body>
+</html>
