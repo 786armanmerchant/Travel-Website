@@ -9,7 +9,7 @@ This Website is developed using well-formed HTML5 and CSS3 structure including u
 You can directly download the code or clone and Run it on Live Server using Visual Studio.
 
 # [Live Preview](https://786armanmerchant.github.io/Travel-Website/) 
-Click 👆to view the Website. 
+Click 👆 to view the Live Website . 
 
 ![Homepage](https://user-images.githubusercontent.com/88231640/193089722-6a98aa91-f860-4433-8e96-d2b7125edb0c.png)
 ![Contact](https://user-images.githubusercontent.com/88231640/193089747-52998979-1523-4c07-8f5e-47706ab6b84a.png)
